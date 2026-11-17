@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo educativo para identificar golpes digitais: PIX, bancos, WhatsApp e fake news.">
+    <meta name="theme-color" content="#060f24">
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <title>CS Cyber Security - Investigador Digital</title>
+    <style>
+        :root {
+            --bg-color: #060f24;
+            --panel-bg: #0a1a36;
+            --panel-2: #12274d;
+            --primary: #38bdf8;
+            --safe: #22c55e;
+            --danger: #ef4444;
+            --text-light: #e2e8f0;
+            --text-muted: #9fb4d3;
+            --text-dark: #0b1220;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:
+                radial-gradient(circle at 20% 10%, rgba(56, 189, 248, 0.12), transparent 40%),
+                radial-gradient(circle at 80% 90%, rgba(37, 99, 235, 0.20), transparent 40%),
+                var(--bg-color);
+            color: var(--text-light);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .game-container {
+            width: 100%;
+            max-width: 900px;
+            height: 95vh;
+            max-height: 700px;
+            background-color: var(--panel-bg);
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(56, 189, 248, 0.35);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Telas */
+        .screen {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding: 22px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow-y: auto;
+        }
+        .screen.active { display: flex; }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        h2 { font-size: 1.3rem; margin: 0 0 12px; }
+        p { font-size: 1rem; line-height: 1.5; margin: 0 0 14px; color: var(--text-light); }
+
+        .shield { font-size: 3.2rem; margin-bottom: 6px; }
+        .menu-text { max-width: 560px; }
+
+        /* Botões */
+        button {
+            padding: 12px 24px;
+            margin: 6px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            font-family: inherit;
+        }
+        .btn-primary { background-color: var(--primary); color: var(--text-dark); }
+        .btn-primary:hover { background-color: #7dd3fc; transform: translateY(-2px); }
+        .btn-safe { background-color: var(--safe); color: #04210d; }
+        .btn-safe:hover { background-color: #4ade80; transform: translateY(-2px); }
+        .btn-danger { background-color: var(--danger); color: white; }
+        .btn-danger:hover { background-color: #f87171; transform: translateY(-2px); }
+        .btn-outline { background-color: transparent; border: 2px solid var(--text-muted); color: var(--text-light); }
+        .btn-outline:hover { background-color: var(--text-light); color: var(--text-dark); }
+
+        /* Categorias */
+        .category-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            width: 100%;
+            max-width: 720px;
+            margin-top: 6px;
+        }
+        .category-card {
+            background-color: var(--panel-2);
+            padding: 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: 0.25s;
+            text-align: left;
+            display: flex;
+            gap: 14px;
+            align-items: center;
+        }
+        .category-card:hover { border-color: var(--primary); transform: translateY(-3px); }
+        .cat-icon {
+            width: 46px; height: 46px; flex: 0 0 46px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem;
+        }
+        .category-card h3 { color: var(--primary); margin: 0 0 4px; font-size: 1.05rem; }
+        .category-card p { font-size: 0.88rem; margin: 0; color: var(--text-muted); }
+
+        /* Fase */
+        #screen-game { justify-content: flex-start; }
+        .phase-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+        .progress {
+            width: 100%;
+            height: 5px;
+            background: var(--panel-2);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, var(--primary), var(--safe));
+            transition: width 0.4s;
+        }
+        #screen-game h2 { font-size: 1.05rem; color: var(--text-muted); margin-bottom: 8px; }
+
+        .evidence-box {
+            width: 100%;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            overflow-y: auto;
+            text-align: left;
+            padding: 4px 0 10px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 6px;
+        }
+
+        /* ===== MOCKUPS ===== */
+        .phone {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.55);
+            border: 3px solid #1f2a44;
+            color: #111b21;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .avatar {
+            width: 38px; height: 38px; flex: 0 0 38px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-weight: bold; font-size: 1rem;
+        }
+        .lnk { color: #027eb5; text-decoration: underline; word-break: break-all; }
+        .tag-fwd { font-size: 0.75rem; color: #667781; font-style: italic; margin-bottom: 3px; }
+
+        /* WhatsApp */
+        .wa-head {
+            background: #075e54;
+            color: #fff;
+            padding: 10px 12px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .wa-back { font-size: 1.6rem; line-height: 1; }
+        .wa-info { display: flex; flex-direction: column; }
+        .wa-info b { font-size: 1rem; }
+        .wa-info small { font-size: 0.75rem; opacity: 0.85; }
+        .wa-body {
+            background-color: #efeae2;
+            background-image: radial-gradient(rgba(0,0,0,0.045) 1.5px, transparent 1.5px);
+            background-size: 16px 16px;
+            padding: 12px;
+            min-height: 170px;
+            display: flex; flex-direction: column; gap: 6px;
+        }
+        .wa-warn {
+            background: #fff4c2;
+            color: #54460f;
+            font-size: 0.78rem;
+            text-align: center;
+            padding: 7px 10px;
+            border-radius: 8px;
+            margin-bottom: 4px;
+        }
+        .wa-date {
+            align-self: center;
+            background: #e1f2fb;
+            color: #54656f;
+            font-size: 0.72rem;
+            padding: 3px 10px;
+            border-radius: 8px;
+            margin-bottom: 4px;
+        }
+        .wa-bubble {
+            background: #fff;
+            align-self: flex-start;
+            max-width: 88%;
+            padding: 7px 9px 6px;
+            border-radius: 0 10px 10px 10px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+        }
+        .wa-bubble time {
+            display: block;
+            text-align: right;
+            font-size: 0.68rem;
+            color: #667781;
+            margin-top: 2px;
+        }
+        .wa-input {
+            background: #f0f2f5;
+            padding: 8px 10px;
+            display: flex; gap: 8px; align-items: center;
+        }
+        .wa-input span.field {
+            flex: 1; background: #fff; border-radius: 20px;
+            padding: 7px 14px; color: #8696a0; font-size: 0.85rem;
+        }
+        .wa-input span.mic {
+            width: 34px; height: 34px; border-radius: 50%;
+            background: #00a884; color: #fff;
+            display: flex; align-items: center; justify-content: center; font-size: 0.9rem;
+        }
+
+        /* SMS */
+        .sms { background: #fff; }
+        .sms-head {
+            background: #f2f2f7;
+            border-bottom: 1px solid #d8d8de;
+            padding: 10px 12px 8px;
+            display: flex; flex-direction: column; align-items: center; gap: 2px;
+            position: relative;
+        }
+        .sms-head .back { position: absolute; left: 12px; top: 12px; color: #007aff; font-size: 0.9rem; }
+        .sms-head .avatar { background: #a2a2ab; width: 34px; height: 34px; flex-basis: 34px; font-size: 0.9rem; }
+        .sms-head b { font-size: 0.9rem; }
+        .sms-head small { color: #8e8e93; font-size: 0.72rem; }
+        .sms-body { padding: 14px 12px 18px; min-height: 170px; background: #fff; }
+        .sms-meta { text-align: center; color: #8e8e93; font-size: 0.72rem; margin-bottom: 8px; }
+        .sms-bubble {
+            background: #e9e9eb;
+            color: #000;
+            padding: 9px 13px;
+            border-radius: 18px 18px 18px 4px;
+            max-width: 85%;
+            font-size: 0.93rem;
+        }
+        .sms-input {
+            background: #f2f2f7; padding: 8px 12px; border-top: 1px solid #d8d8de;
+        }
+        .sms-input span {
+            display: block; border: 1px solid #c8c8cd; border-radius: 16px;
+            background: #fff; color: #a0a0a8; padding: 6px 12px; font-size: 0.82rem;
+        }
+
+        /* E-mail */
+        .mail { background: #fff; }
+        .mail-bar {
+            background: #f1f3f4; border-bottom: 1px solid #dadce0;
+            padding: 10px 14px; font-size: 0.8rem; color: #5f6368;
+            display: flex; justify-content: space-between;
+        }
+        .mail-subject { padding: 14px 14px 8px; font-size: 1.1rem; font-weight: 600; color: #202124; }
+        .mail-from { display: flex; gap: 10px; padding: 4px 14px 10px; align-items: center; border-bottom: 1px solid #eceff1; }
+        .mail-from .who { display: flex; flex-direction: column; min-width: 0; }
+        .mail-from b { color: #202124; font-size: 0.9rem; }
+        .mail-from small { color: #5f6368; font-size: 0.75rem; overflow-wrap: anywhere; }
+        .mail-body { padding: 14px; color: #202124; min-height: 100px; }
+
+        /* Facebook */
+        .fb { background: #f0f2f5; padding: 10px; }
+        .fb-card { background: #fff; border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,0.2); overflow: hidden; }
+        .fb-head { display: flex; gap: 10px; align-items: center; padding: 12px; }
+        .fb-head .who { display: flex; flex-direction: column; }
+        .fb-head b { font-size: 0.92rem; color: #050505; }
+        .fb-head small { color: #65676b; font-size: 0.75rem; }
+        .fb-text { padding: 0 12px 12px; color: #050505; font-size: 1rem; }
+        .fb-stats {
+            display: flex; justify-content: space-between;
+            padding: 8px 12px; color: #65676b; font-size: 0.8rem;
+            border-top: 1px solid #ced0d4;
+        }
+        .fb-actions {
+            display: flex; justify-content: space-around;
+            padding: 8px; color: #65676b; font-size: 0.85rem; font-weight: 600;
+            border-top: 1px solid #ced0d4;
+        }
+
+        /* Navegador / Notícia */
+        .browser { background: #fff; }
+        .browser-bar {
+            background: #dfe1e5; padding: 9px 10px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .browser-dots { display: flex; gap: 5px; }
+        .browser-dots i { width: 9px; height: 9px; border-radius: 50%; display: block; }
+        .browser-url {
+            flex: 1; min-width: 0; background: #fff; border-radius: 14px;
+            padding: 5px 12px; font-size: 0.72rem; color: #3c4043;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .news-top { background: #c4170c; color: #fff; padding: 8px 14px; font-weight: bold; font-size: 0.9rem; }
+        .news-body { padding: 14px; color: #1a1a1a; min-height: 120px; }
+        .news-body small { color: #777; display: block; margin-bottom: 6px; }
+        .news-body h3 { margin: 0; font-size: 1.15rem; line-height: 1.3; }
+
+        /* Feedback */
+        .feedback-overlay {
+            display: none;
+            position: absolute;
+            inset: 0;
+            background: rgba(5, 8, 16, 0.92);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px;
+            text-align: center;
+            z-index: 10;
+        }
+        .feedback-overlay h2 { font-size: 2rem; margin-bottom: 10px; }
+        .feedback-overlay p { font-size: 1.05rem; margin-bottom: 24px; max-width: 600px; color: var(--text-muted); }
+        .correct-text { color: var(--safe); }
+        .wrong-text { color: var(--danger); }
+
+        /* Celular */
+        @media (max-width: 768px) {
+            body { padding: 0; }
+            .game-container {
+                width: 100vw; height: 100vh; max-height: none;
+                border-radius: 0;
+            }
+            .screen { padding: 14px; }
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.15rem; }
+            p { font-size: 0.95rem; }
+            .category-grid { grid-template-columns: 1fr; gap: 10px; }
+            button { padding: 10px 16px; font-size: 0.85rem; }
+            .phone { font-size: 0.9rem; }
+        }
+
+        /* ===== MELHORIAS (acessibilidade, pistas, créditos) ===== */
+        body { min-height: 100dvh; }
+        .game-container { height: 95dvh; }
+        .screen { justify-content: flex-start; }
+        .screen > :first-child { margin-top: auto; }
+        .screen > :last-child { margin-bottom: auto; }
+
+        button:focus-visible, .category-card:focus-visible, .clue:focus-visible {
+            outline: 3px solid #facc15; outline-offset: 2px;
+        }
+        button:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; }
+
+        .subtitle { color: var(--text-muted); letter-spacing: 4px; text-transform: uppercase; font-size: 0.85rem; margin: -4px 0 16px; }
+        .howto {
+            background: var(--panel-2); border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 12px; padding: 12px 16px; text-align: left;
+            max-width: 560px; margin: 4px 0 14px;
+        }
+        .howto h3 { margin: 0 0 6px; color: var(--primary); font-size: 0.95rem; }
+        .howto ol { margin: 0; padding-left: 20px; font-size: 0.92rem; line-height: 1.55; }
+        .credits { margin-top: 14px; max-width: 560px; }
+        .credits p { font-size: 0.78rem; color: var(--text-muted); margin: 0 0 4px; line-height: 1.5; }
+
+        .cat-badge { display: inline-block; margin-top: 6px; font-size: 0.78rem; font-weight: bold; color: var(--safe); }
+        .cat-badge:empty { display: none; }
+        .category-card:focus-visible { border-color: var(--primary); }
+
+        .btn-back {
+            padding: 4px 10px; margin: 0; font-size: 0.78rem;
+            background: transparent; border: 1px solid var(--text-muted); color: var(--text-muted);
+        }
+        .btn-back:hover { color: var(--text-light); border-color: var(--text-light); }
+        .phase-header { align-items: center; gap: 8px; }
+        #game-category-title { flex: 1; text-align: center; }
+
+        /* Pistas clicáveis (investigação) */
+        .clue {
+            background: rgba(250, 204, 21, 0.30);
+            border-bottom: 2px dashed #ca8a04;
+            border-radius: 3px; padding: 0 2px; cursor: pointer;
+            transition: background 0.2s;
+        }
+        .clue:hover { background: rgba(250, 204, 21, 0.55); }
+        .clue.found { background: rgba(34, 197, 94, 0.28); border-bottom: 2px solid #16a34a; }
+        .clue-panel {
+            width: 100%; max-height: 112px; overflow-y: auto; text-align: left;
+            background: var(--panel-2); border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 10px; padding: 8px 12px; margin-top: 6px;
+            font-size: 0.85rem; color: var(--text-muted); line-height: 1.45;
+        }
+        .clue-panel b { color: var(--primary); }
+        .clue-item { color: var(--text-light); margin-top: 4px; }
+
+        .feedback-overlay { justify-content: flex-start; overflow-y: auto; }
+        .feedback-overlay > :first-child { margin-top: auto; }
+        .feedback-overlay > :last-child { margin-bottom: auto; }
+        .feedback-overlay p { margin-bottom: 14px; color: var(--text-light); }
+        .feedback-overlay .tip {
+            background: rgba(56, 189, 248, 0.10); border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 10px; padding: 10px 14px; font-size: 0.95rem; margin-bottom: 22px;
+        }
+
+        .muted { color: var(--text-muted); }
+        .tips-box {
+            background: var(--panel-2); border-radius: 12px; padding: 12px 18px;
+            text-align: left; max-width: 520px; margin: 4px 0 14px;
+        }
+        .tips-box h3 { margin: 0 0 6px; color: var(--primary); font-size: 1rem; }
+        .tips-box ul { margin: 0; padding-left: 20px; font-size: 0.92rem; line-height: 1.55; }
+
+        /* Fontes um pouco maiores (público idoso) */
+        .wa-bubble time { font-size: 0.75rem; }
+        .sms-meta, .wa-date { font-size: 0.78rem; }
+        .browser-url { font-size: 0.8rem; }
+        .wa-warn { font-size: 0.82rem; }
+
+        @media (max-width: 768px) {
+            .game-container { height: 100dvh; }
+            .credits p { font-size: 0.74rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; }
+        }
+
+        /* ===== FASE 2: toolbar, patentes, central, revisão, contraste ===== */
+        .game-container > .screen { height: auto; flex: 1; min-height: 0; }
+        .toolbar { display: flex; justify-content: flex-end; padding: 8px 14px 0; flex: 0 0 auto; }
+        .toolbar button {
+            padding: 3px 10px; margin: 0 0 0 6px; font-size: 0.75rem; text-transform: none;
+            background: transparent; border: 1px solid var(--text-muted); color: var(--text-muted);
+        }
+        .toolbar button:hover, .toolbar button[aria-pressed="true"] { color: var(--text-dark); background: var(--text-light); }
+
+        .rank-panel {
+            background: var(--panel-2); border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 10px; padding: 8px 14px; margin: 0 0 12px;
+            font-size: 0.9rem; color: var(--text-light); max-width: 720px;
+        }
+        .rank-panel:empty { display: none; }
+        .category-card.wide { grid-column: 1 / -1; border-color: rgba(250, 204, 21, 0.45); }
+        .cat-actions { margin-top: 6px; }
+
+        .evidence-head { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+        .evidence-head h2 { margin: 0 !important; }
+        .level { color: var(--primary); font-size: 0.85rem; font-weight: bold; }
+
+        .help-tabs { display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 8px; }
+        .help-tab { padding: 8px 14px; font-size: 0.85rem; }
+        .help-tab.active { background: var(--primary); color: var(--text-dark); border-color: var(--primary); }
+        .help-body { width: 100%; max-width: 640px; text-align: left; margin-bottom: 10px; }
+        .help-pane { display: none; background: var(--panel-2); border-radius: 12px; padding: 14px 18px; font-size: 0.93rem; line-height: 1.55; }
+        .help-pane h3 { color: var(--primary); margin: 10px 0 6px; font-size: 1rem; }
+        .help-pane h3:first-child { margin-top: 0; }
+        .help-pane ul, .help-pane ol { margin: 0 0 8px; padding-left: 20px; }
+        .help-pane p { font-size: 0.93rem; margin: 0 0 10px; }
+        .help-pane dt { font-weight: bold; color: var(--text-light); margin-top: 10px; }
+        .help-pane dt:first-child { margin-top: 0; }
+        .help-pane dd { margin: 2px 0 0; color: var(--text-muted); }
+
+        .review-list { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: 22px; text-align: left; margin: 8px 0 14px; }
+        .review-item h3 { color: var(--danger); font-size: 1rem; margin: 0 0 8px; }
+        .review-item p { font-size: 0.93rem; margin: 10px 0 6px; }
+        .review-item .clue { cursor: default; }
+        .review-clues { margin: 4px 0 8px; padding-left: 20px; font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
+        .review-item .tip {
+            background: rgba(56, 189, 248, 0.10); border: 1px solid rgba(56, 189, 248, 0.35);
+            border-radius: 10px; padding: 8px 12px; font-size: 0.9rem;
+        }
+
+        .name-input {
+            width: 100%; max-width: 360px; padding: 12px; margin-bottom: 14px; font-family: inherit; font-size: 1rem;
+            border-radius: 8px; border: 2px solid var(--primary); background: var(--panel-2); color: var(--text-light);
+        }
+
+        /* Alto contraste */
+        body.hc { --bg-color: #000; --panel-bg: #000; --panel-2: #0d0d0d; --text-muted: #e5e7eb; background: #000; }
+        body.hc .game-container { box-shadow: 0 0 0 2px #fff; }
+        body.hc .category-card, body.hc .howto, body.hc .tips-box, body.hc .clue-panel,
+        body.hc .help-pane, body.hc .rank-panel { border: 1px solid #fff; }
+        body.hc .clue { background: #facc15; color: #000; }
+        body.hc .clue.found { background: #4ade80; color: #000; }
+
+        /* ===== IDENTIDADE VISUAL (logo CS Cyber Security) ===== */
+        h1 { text-shadow: 0 0 22px rgba(56, 189, 248, 0.45); }
+        .btn-primary { box-shadow: 0 0 16px rgba(56, 189, 248, 0.35); }
+        .logo {
+            width: 132px; height: 132px; border-radius: 26px; margin-bottom: 10px;
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.40), 0 6px 18px rgba(0, 0, 0, 0.5);
+        }
+        .logo-sm { width: 72px; height: 72px; border-radius: 16px; display: block; margin: 0 auto 10px; box-shadow: 0 0 18px rgba(56, 189, 248, 0.35); }
+        .toolbar { align-items: center; }
+        .toolbar .brand {
+            display: flex; align-items: center; gap: 8px; margin: 0 auto 0 0; padding: 2px 6px;
+            background: transparent; border: none; color: var(--text-light); font-size: 0.8rem; font-weight: bold;
+        }
+        .toolbar .brand:hover { background: transparent; color: var(--primary); }
+        .toolbar .brand img { width: 28px; height: 28px; border-radius: 8px; box-shadow: 0 0 10px rgba(56, 189, 248, 0.35); }
+        @media (max-width: 480px) { .toolbar .brand span { display: none; } }
+        @media (max-width: 768px) { .logo { width: 108px; height: 108px; border-radius: 22px; } }
+    </style>
+</head>
+<body>
+
+    <div class="game-container">
+
+        <div class="toolbar" role="toolbar" aria-label="Acessibilidade">
+            <button class="brand" onclick="showScreen('screen-menu')" aria-label="Ir para o menu inicial"><img data-logo alt=""><span>CS Cyber Security</span></button>
+            <button onclick="changeFont(-1)" aria-label="Diminuir tamanho da letra">A−</button>
+            <button onclick="changeFont(1)" aria-label="Aumentar tamanho da letra">A+</button>
+            <button id="btn-contrast" onclick="toggleContrast()" aria-pressed="false">Contraste</button>
+        </div>
+
+        <!-- TELA 1: MENU INICIAL -->
+        <div id="screen-menu" class="screen active">
+            <img class="logo" data-logo alt="Logo do CS Cyber Security: escudo azul com as letras CS e um cadeado">
+            <h1>CS Cyber Security</h1>
+            <div class="subtitle">Investigador Digital</div>
+            <div class="menu-text">
+                <p>Torne-se um expert em identificar golpes na internet!</p>
+                <p>Sua missão é identificar fraudes digitais e ficar sempre em alerta para os possíveis novos golpes da internet.</p>
+                <p>Atenção: os cenários apresentados são dos golpes mais comuns na internet no ano de 2026!</p>
+            </div>
+            <div class="howto">
+                <h3>Como jogar</h3>
+                <ol>
+                    <li>Escolha uma categoria de investigação.</li>
+                    <li>Toque nos trechos <b>destacados em amarelo</b> (remetente, links, números) para coletar pistas.</li>
+                    <li>Decida: <b>é um golpe</b> ou <b>é seguro</b>?</li>
+                </ol>
+            </div>
+            <div class="rank-panel" id="menu-rank"></div>
+            <div>
+                <button class="btn-primary" onclick="showScreen('screen-categories')">Iniciar Expediente</button>
+                <button class="btn-outline" onclick="openHelp('glossario')">Central de Segurança</button>
+            </div>
+            <div class="credits">
+                <p>Projeto de Extensão (PROEX) · Fundação Assis Gurgacz (FAG) · Toledo – PR</p>
+                <p>Desenvolvido por João, Henrique, Matheus e Julio.</p>
+                <p>🔒 LGPD: este jogo é 100% educativo, usa apenas cenários fictícios e não coleta nem armazena dados pessoais (Lei nº 13.709/2018).</p>
+            </div>
+        </div>
+
+        <!-- TELA 2: ESCOLHA DE CATEGORIA -->
+        <div id="screen-categories" class="screen">
+            <h2>Selecione o Foco da Investigação</h2>
+            <div class="rank-panel" id="cat-rank" aria-live="polite"></div>
+            <div class="category-grid">
+                <div class="category-card" role="button" tabindex="0" onclick="startCategory('pix')">
+                    <div class="cat-icon" style="background:#0e3b43;" aria-hidden="true">💸</div>
+                    <div>
+                        <h3>1 - PIX e Promoções</h3>
+                        <p>Falsos prêmios e fraudes financeiras diretas.</p>
+                        <span class="cat-badge" id="badge-pix"></span>
+                    </div>
+                </div>
+                <div class="category-card" role="button" tabindex="0" onclick="startCategory('bancos')">
+                    <div class="cat-icon" style="background:#3b2a0e;" aria-hidden="true">🏦</div>
+                    <div>
+                        <h3>2 - Mensagens de Bancos</h3>
+                        <p>Phishing e clonagem de instituições financeiras.</p>
+                        <span class="cat-badge" id="badge-bancos"></span>
+                    </div>
+                </div>
+                <div class="category-card" role="button" tabindex="0" onclick="startCategory('whatsapp')">
+                    <div class="cat-icon" style="background:#0e3b22;" aria-hidden="true">💬</div>
+                    <div>
+                        <h3>3 - WhatsApp Clonado</h3>
+                        <p>Engenharia social e falsos pedidos de parentes.</p>
+                        <span class="cat-badge" id="badge-whatsapp"></span>
+                    </div>
+                </div>
+                <div class="category-card" role="button" tabindex="0" onclick="startCategory('fakenews')">
+                    <div class="cat-icon" style="background:#3b0e18;" aria-hidden="true">📰</div>
+                    <div>
+                        <h3>4 - Fake News</h3>
+                        <p>Desinformação e links maliciosos em redes sociais.</p>
+                        <span class="cat-badge" id="badge-fakenews"></span>
+                    </div>
+                </div>
+                <div class="category-card" role="button" tabindex="0" onclick="startCategory('outros')">
+                    <div class="cat-icon" style="background:#2a1f3b;" aria-hidden="true">🧾</div>
+                    <div>
+                        <h3>5 - Golpes do Dia a Dia</h3>
+                        <p>INSS, boletos, encomendas, vendas online e falsos relacionamentos.</p>
+                        <span class="cat-badge" id="badge-outros"></span>
+                    </div>
+                </div>
+                <div class="category-card" role="button" tabindex="0" onclick="startCategory('desafio')">
+                    <div class="cat-icon" style="background:#3b350e;" aria-hidden="true">⭐</div>
+                    <div>
+                        <h3>★ Desafio Final</h3>
+                        <p>10 casos sorteados de todas as categorias, com cronômetro.</p>
+                        <span class="cat-badge" id="badge-desafio"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-actions">
+                <button id="btn-cert" class="btn-safe" onclick="openCert()" disabled>🎓 Certificado</button>
+                <button class="btn-outline" onclick="openHelp('glossario')">Central de Segurança</button>
+                <button class="btn-outline" onclick="showScreen('screen-menu')">Voltar ao Menu</button>
+            </div>
+        </div>
+
+        <!-- TELA 3: FASE DE JOGO -->
+        <div id="screen-game" class="screen">
+            <div class="phase-header">
+                <button class="btn-back" onclick="showScreen('screen-categories')" aria-label="Voltar às categorias">‹ Categorias</button>
+                <span id="game-category-title">Categoria</span>
+                <span id="game-phase-counter">Fase 1 de 4</span>
+            </div>
+            <div class="progress"><div class="progress-bar" id="progress-bar"></div></div>
+
+            <div class="evidence-head">
+                <h2>Analise a evidência abaixo:</h2>
+                <span class="level" id="level-label"></span>
+                <button id="btn-speak" class="btn-back" onclick="toggleSpeech()" aria-label="Ouvir a evidência em voz alta">🔊 Ouvir</button>
+            </div>
+            <div class="evidence-box" id="evidence-text"></div>
+            <div class="clue-panel" id="clue-panel" aria-live="polite"></div>
+
+            <div class="action-buttons">
+                <button id="btn-scam" class="btn-danger" onclick="checkAnswer(true)">É UM GOLPE</button>
+                <button id="btn-safe" class="btn-safe" onclick="checkAnswer(false)">É SEGURO</button>
+            </div>
+        </div>
+
+        <!-- TELA 4: RESULTADO -->
+        <div id="screen-result" class="screen">
+            <div class="shield" id="result-icon" aria-hidden="true">🏅</div>
+            <h1 id="result-title">Investigação Concluída!</h1>
+            <p class="muted" id="result-category"></p>
+            <p id="result-score">Você acertou X de Y casos.</p>
+            <p class="muted" id="result-points"></p>
+            <p id="result-rank"></p>
+            <div class="tips-box">
+                <h3>Lembre-se</h3>
+                <ul id="result-tips"></ul>
+            </div>
+            <div>
+                <button id="btn-review" class="btn-danger" onclick="openReview()">Revisar Erros</button>
+                <button class="btn-safe" onclick="startCategory(currentCategory)">Jogar Novamente</button>
+                <button class="btn-primary" onclick="showScreen('screen-categories')">Escolher Nova Categoria</button>
+                <button class="btn-outline" onclick="showScreen('screen-menu')">Voltar ao Menu Principal</button>
+            </div>
+        </div>
+
+        <!-- TELA 5: REVISÃO DOS ERROS -->
+        <div id="screen-review" class="screen">
+            <h2>Revisão dos Erros</h2>
+            <div class="review-list" id="review-list"></div>
+            <button class="btn-primary" onclick="showScreen('screen-result')">Voltar ao Resultado</button>
+        </div>
+
+        <!-- TELA 6: CENTRAL DE SEGURANÇA -->
+        <div id="screen-help" class="screen">
+            <h2>Central de Segurança</h2>
+            <div class="help-tabs" role="tablist">
+                <button class="btn-outline help-tab" role="tab" data-tab="glossario" onclick="setHelpTab('glossario')">Glossário</button>
+                <button class="btn-outline help-tab" role="tab" data-tab="protecao" onclick="setHelpTab('protecao')">Como se proteger</button>
+                <button class="btn-outline help-tab" role="tab" data-tab="sobre" onclick="setHelpTab('sobre')">Sobre o projeto</button>
+            </div>
+            <div class="help-body">
+                <div class="help-pane" id="help-glossario">
+                    <dl>
+                        <dt>Phishing</dt><dd>Golpe que usa mensagens ou sites falsos para "pescar" senhas, códigos e dados pessoais.</dd>
+                        <dt>Smishing</dt><dd>Phishing feito por SMS.</dd>
+                        <dt>Engenharia social</dt><dd>Manipulação psicológica (urgência, medo, ganância ou afeto) para fazer a vítima agir sem pensar.</dd>
+                        <dt>Falsificação de remetente</dt><dd>Quando o golpista faz o número ou o e-mail parecer o de uma empresa real.</dd>
+                        <dt>Domínio</dt><dd>O endereço de um site (por exemplo, nubank.com.br). Golpistas criam endereços parecidos com o verdadeiro.</dd>
+                        <dt>Link encurtado</dt><dd>Endereço reduzido (como bit.ly) que esconde o destino real do link.</dd>
+                        <dt>Verificação em duas etapas</dt><dd>Segunda camada de proteção, além da senha, que impede o acesso mesmo que a senha vaze.</dd>
+                        <dt>Código de verificação</dt><dd>Número enviado por SMS ou app para confirmar que é você. Nunca deve ser compartilhado.</dd>
+                        <dt>Deepfake</dt><dd>Vídeo ou áudio criado ou alterado por inteligência artificial para imitar uma pessoa real.</dd>
+                        <dt>MED do PIX</dt><dd>Mecanismo Especial de Devolução: permite contestar, pelo app do banco, transferências feitas por golpe ou fraude.</dd>
+                        <dt>LGPD</dt><dd>Lei Geral de Proteção de Dados (Lei nº 13.709/2018), que garante direitos sobre os seus dados pessoais.</dd>
+                    </dl>
+                </div>
+                <div class="help-pane" id="help-protecao">
+                    <h3>Boas práticas</h3>
+                    <ul>
+                        <li>Desconfie de urgência, prêmios inesperados e promessas de dinheiro fácil.</li>
+                        <li>Nunca compartilhe senhas, tokens ou códigos recebidos por SMS.</li>
+                        <li>Confira o domínio do site e do e-mail antes de clicar ou responder.</li>
+                        <li>Se alguém pedir dinheiro por mensagem, ligue para a pessoa no número que você já conhece.</li>
+                        <li>Use o app ou o site oficial digitando o endereço você mesmo.</li>
+                        <li>Mantenha o celular e os aplicativos atualizados.</li>
+                    </ul>
+                    <h3>Ativar a verificação em duas etapas no WhatsApp</h3>
+                    <ol>
+                        <li>Abra o WhatsApp e acesse Configurações.</li>
+                        <li>Toque em Conta e depois em Confirmação em duas etapas.</li>
+                        <li>Ative, crie um PIN de 6 dígitos e cadastre um e-mail de recuperação.</li>
+                    </ol>
+                    <h3>Caí em um golpe, e agora?</h3>
+                    <ol>
+                        <li>Ligue para o banco, pelo número do verso do cartão, e conte o que aconteceu.</li>
+                        <li>Peça a contestação do PIX (MED) pelo app do banco o quanto antes.</li>
+                        <li>Troque as senhas das contas envolvidas e ative a verificação em duas etapas.</li>
+                        <li>Registre um boletim de ocorrência na delegacia ou na delegacia virtual do seu estado.</li>
+                        <li>Avise familiares e contatos e denuncie o número no WhatsApp.</li>
+                        <li>Para problemas com empresas, registre reclamação no consumidor.gov.br ou no Procon.</li>
+                        <li>Em caso de ameaça ou emergência, ligue 190.</li>
+                    </ol>
+                </div>
+                <div class="help-pane" id="help-sobre">
+                    <img class="logo-sm" data-logo alt="Logo do CS Cyber Security">
+                    <h3>CS Cyber Security</h3>
+                    <p>Jogo educativo interativo no estilo Point and Click / Investigativo. O jogador assume o papel de um analista de segurança digital e examina mensagens, e-mails, links, notícias e redes sociais fictícias para identificar golpes virtuais reais.</p>
+                    <p><b>Objetivo:</b> conscientizar sobre segurança digital de forma prática e acessível para a comunidade local (estudantes, idosos e adultos).</p>
+                    <p><b>Instituição:</b> Projeto de Extensão (PROEX) · Fundação Assis Gurgacz (FAG) · Toledo – PR.</p>
+                    <p><b>Equipe:</b> João, Henrique, Matheus e Julio.</p>
+                    <h3>Privacidade (LGPD)</h3>
+                    <p>Os cenários são fictícios e inspirados em golpes reais; marcas aparecem apenas para fins educativos. O jogo não envia dados para nenhum servidor. Pontos, patente e preferências ficam salvos só neste aparelho.</p>
+                    <button class="btn-danger" onclick="clearData()">Apagar meus dados salvos</button>
+                </div>
+            </div>
+            <button class="btn-primary" onclick="showScreen('screen-menu')">Voltar ao Menu</button>
+        </div>
+
+        <!-- MODAL: CERTIFICADO -->
+        <div id="cert-modal" class="feedback-overlay" role="dialog" aria-modal="true" aria-labelledby="cert-title">
+            <h2 id="cert-title">🎓 Certificado de Participação</h2>
+            <p>Digite o seu nome para aparecer no certificado. Ele é usado apenas neste aparelho e não é enviado nem salvo (LGPD).</p>
+            <input id="cert-name" class="name-input" type="text" maxlength="60" placeholder="Seu nome completo" autocomplete="off">
+            <div>
+                <button class="btn-primary" onclick="generateCertificate()">Baixar Certificado</button>
+                <button class="btn-outline" onclick="closeCert()">Cancelar</button>
+            </div>
+        </div>
+
+        <!-- MODAL DE FEEDBACK -->
+        <div id="feedback-modal" class="feedback-overlay" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
+            <h2 id="feedback-title">Resultado</h2>
+            <p id="feedback-explanation">Explicação vai aqui.</p>
+            <p class="tip" id="feedback-tip"></p>
+            <button id="btn-next" class="btn-primary" onclick="nextPhase()">Continuar</button>
+        </div>
+
+    </div>
+
+    <script>
+        // ===== Utilitários de pistas (elementos clicáveis da investigação) =====
+        const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+        const C = (label, text) =>
+            `<span class="clue" role="button" tabindex="0" data-clue="${esc(text)}">${label}</span>`;
+        const cl = (label, text) => text ? C(label, text) : label;
+
+        // ===== Funções que desenham cada tipo de evidência =====
+        function renderWhatsApp(o) {
+            const msgs = o.msgs.map(m => `
+                <div class="wa-bubble">
+                    ${m.forwarded ? `<div class="tag-fwd">↪ ${m.forwarded}</div>` : ''}
+                    ${m.html}
+                    <time>${m.time}</time>
+                </div>`).join('');
+            return `
+            <div class="phone">
+                <div class="wa-head">
+                    <span class="wa-back">‹</span>
+                    <div class="avatar" style="background:${o.color};color:${o.fg || '#fff'}">${o.initial}</div>
+                    <div class="wa-info"><b>${cl(o.name, o.clueName)}</b><small>${o.sub}</small></div>
+                </div>
+                <div class="wa-body">
+                    ${o.unknown ? '<div class="wa-warn">Este contato não está na sua lista de contatos.</div>' : ''}
+                    <div class="wa-date">HOJE</div>
+                    ${msgs}
+                </div>
+                <div class="wa-input"><span class="field">Mensagem</span><span class="mic">🎤</span></div>
+            </div>`;
+        }
+
+        function renderSMS(o) {
+            return `
+            <div class="phone sms">
+                <div class="sms-head">
+                    <span class="back">‹ Mensagens</span>
+                    <div class="avatar">👤</div>
+                    <b>${cl(o.sender, o.clueSender)}</b>
+                    <small>${o.sub}</small>
+                </div>
+                <div class="sms-body">
+                    <div class="sms-meta">SMS · Hoje ${o.time}</div>
+                    <div class="sms-bubble">${o.html}</div>
+                </div>
+                <div class="sms-input"><span>Mensagem de texto</span></div>
+            </div>`;
+        }
+
+        function renderEmail(o) {
+            return `
+            <div class="phone mail">
+                <div class="mail-bar"><span>📥 Caixa de entrada</span><span>${o.time}</span></div>
+                <div class="mail-subject">${o.subject}</div>
+                <div class="mail-from">
+                    <div class="avatar" style="background:${o.color}">${o.initial}</div>
+                    <div class="who"><b>${o.name}</b><small>&lt;${cl(o.address, o.clueAddress)}&gt;</small></div>
+                </div>
+                <div class="mail-body">${o.html}</div>
+            </div>`;
+        }
+
+        function renderPost(o) {
+            return `
+            <div class="phone fb">
+                <div class="fb-card">
+                    <div class="fb-head">
+                        <div class="avatar" style="background:${o.color}">${o.initial}</div>
+                        <div class="who"><b>${cl(o.name, o.clueName)}</b><small>${o.time} · 🌎</small></div>
+                    </div>
+                    <div class="fb-text">${o.html}</div>
+                    <div class="fb-stats"><span>👍😮 ${o.likes}</span><span>${o.shares}</span></div>
+                    <div class="fb-actions"><span>👍 Curtir</span><span>💬 Comentar</span><span>↗ Compartilhar</span></div>
+                </div>
+            </div>`;
+        }
+
+        function renderNews(o) {
+            return `
+            <div class="phone browser">
+                <div class="browser-bar">
+                    <div class="browser-dots">
+                        <i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+                    </div>
+                    <div class="browser-url">🔒 ${cl(o.url, o.clueUrl)}</div>
+                </div>
+                <div class="news-top">${o.site}</div>
+                <div class="news-body">
+                    <small>${o.section}</small>
+                    <h3>${o.html}</h3>
+                </div>
+            </div>`;
+        }
+
+        const renderers = {
+            whatsapp: renderWhatsApp,
+            sms: renderSMS,
+            email: renderEmail,
+            post: renderPost,
+            news: renderNews
+        };
+
+        // ===== Banco de Dados das Fases =====
+        const db = {
+            pix: [
+                {
+                    view: { type: 'sms', sender: '+55 11 95555-0142', sub: 'Número comum', time: '09:12',
+                        clueSender: 'O remetente é um número comum de celular. O Banco Central e os bancos não avisam sobre PIX por números comuns.',
+                        html: `${C('URGENTE', 'Urgência é uma tática para você agir sem pensar.')}: Seu PIX de R$ 1.500,00 foi retido. Para liberar, pague a taxa do Banco Central de R$ 45,90 na chave aleatória: ${C('fd89-23kd-1111', 'Nenhum órgão cobra "taxa para liberar PIX". Pagar uma chave aleatória é entregar dinheiro direto ao golpista.')}` },
+                    isScam: true,
+                    exp: "O Banco Central não cobra taxas para liberar PIX. A urgência e o pagamento para uma chave aleatória são sinais clássicos de golpe.",
+                    tip: "Nunca pague \"taxas\" para receber dinheiro. Dados e chaves PIX são informações pessoais protegidas pela LGPD: não repasse a desconhecidos."
+                },
+                {
+                    view: { type: 'sms', sender: '+55 21 98877-4410', sub: 'Número comum', time: '11:03',
+                        clueSender: 'Prêmio de verdade não chega por número comum de celular, e você nem sabe de qual empresa é.',
+                        html: `🎉 PARABÉNS! Você foi sorteado(a) e ganhou ${C('R$ 5.000 via PIX', 'Você não se lembra de ter participado de nenhum sorteio. Prêmio surpresa é isca de golpe.')} no Sorteio Nacional 2026. Resgate agora: ${C('premio-pix-bonus.top/resgatar', 'Link com domínio ".top" desconhecido, sem relação com nenhuma empresa ou banco. Leva a uma página falsa que rouba dados e cobra "taxa de saque".')} Válido só hoje!` },
+                    isScam: true,
+                    exp: "Ninguém ganha prêmio de sorteio em que não participou. O link leva a uma página falsa que coleta seus dados e cobra uma \"taxa de saque\".",
+                    tip: "Páginas falsas pedem CPF, senha e até selfie. Seus dados pessoais são protegidos pela LGPD: não os entregue a sites desconhecidos."
+                },
+                {
+                    view: { type: 'email', subject: 'Parabéns pela sua compra!', name: 'Compras KaBuM Ofertas', address: 'compras@kabum-ofertas.net',
+                        clueAddress: 'O domínio "kabum-ofertas.net" não é o oficial da loja (kabum.com.br). Golpistas criam endereços parecidos.',
+                        initial: 'K', color: '#e65100', time: '10:41',
+                        html: `Parabéns pela compra! ${C('Pedido nº 88231 confirmado.', 'Você não fez nenhuma compra recente? Então desconfie: a mensagem é uma isca para você agir por impulso.')}<br><br>Segue a chave PIX (CNPJ) para pagamento. ${C('Desconto válido por 10 minutos.', 'Pressão de tempo: a tática serve para você não conferir nada.')}` },
+                    isScam: true,
+                    exp: "O domínio do e-mail é falso ('kabum-ofertas.net'). A pressão de tempo é tática de engenharia social.",
+                    tip: "Antes de pagar qualquer PIX, confira o domínio do remetente e entre pelo site ou app oficial da loja."
+                },
+                {
+                    view: { type: 'email', subject: 'Recebemos o seu pagamento', name: 'Mercado Pago', address: 'notificacao@mercadopago.com.br',
+                        clueAddress: 'O domínio "mercadopago.com.br" é o oficial da empresa.',
+                        initial: 'M', color: '#009ee3', time: '14:05',
+                        html: `Olá, recebemos o seu pagamento de R$ 50,00 referente à sua fatura mensal. ${C('Nenhuma ação adicional é necessária.', 'A mensagem não pede cliques, dados nem pagamentos extras: é só um comprovante.')}` },
+                    isScam: false,
+                    exp: "Este é um comprovante legítimo. O domínio está correto e não exige cliques ou taxas extras.",
+                    tip: "Nem toda mensagem é golpe: comprovantes legítimos informam e não pedem nada. Na dúvida, confira o valor no app oficial."
+                }
+            ],
+            bancos: [
+                {
+                    view: { type: 'sms', sender: 'CAIXA', sub: 'Número curto', time: '16:27',
+                        html: `CAIXA: Compra suspeita de R$ 2.450,00 aprovada. Caso não reconheça, ligue ${C('0800-123-4567', 'O telefone vem dentro da mensagem. Use sempre o número do verso do cartão ou do app oficial, nunca o do SMS.')} imediatamente.` },
+                    isScam: true,
+                    exp: "Golpe da falsa central! Falsos atendentes pedirão sua senha ao ligar.",
+                    tip: "Banco nunca pede senha, token ou código por telefone. Desligue e ligue para o número do verso do cartão."
+                },
+                {
+                    view: { type: 'email', subject: 'Novo dispositivo autorizado', name: 'Nubank Segurança', address: 'seguranca@nubank.com.br',
+                        clueAddress: 'O domínio "nubank.com.br" é o oficial da empresa.',
+                        initial: 'N', color: '#820ad1', time: '08:30',
+                        html: `Seu novo dispositivo foi autorizado com sucesso. ${C('Acesse o app para conferir seus limites.', 'A mensagem orienta abrir o app oficial; não traz link para clicar nem pede dados.')}` },
+                    isScam: false,
+                    exp: "Notificação padrão de segurança sem links maliciosos e com remetente oficial.",
+                    tip: "Se você não reconhece o dispositivo, abra o app oficial por conta própria e revise os acessos."
+                },
+                {
+                    view: { type: 'whatsapp', name: 'Banco do Brasil', sub: 'Conta comercial', initial: 'BB', color: '#f9c800', fg: '#111', unknown: true,
+                        clueName: 'Contato desconhecido, sem selo de conta verificada. Bancos não entram em contato por WhatsApp assim.',
+                        msgs: [{ time: '11:48',
+                            html: `Senhor(a) cliente, sua conta foi ${C('bloqueada judicialmente', 'Ameaça para causar medo. Bloqueios judiciais não são comunicados por mensagem com link.')}. Clique no link ${C('bit.ly/desbloqueio-bb', 'Link encurtado esconde o destino real. Bancos não usam esse tipo de link.')} para resolver.` }] },
+                    isScam: true,
+                    exp: "Bancos não informam bloqueios por WhatsApp enviando links encurtados.",
+                    tip: "Links encurtados escondem o destino. Na dúvida, abra o app do banco digitando você mesmo o endereço."
+                },
+                {
+                    view: { type: 'email', subject: 'Atualização cadastral obrigatória', name: 'Bradesco Atendimento', address: 'atendimento@bradesco-cadastro.info',
+                        clueAddress: 'O domínio ".info" (bradesco-cadastro.info) não pertence ao banco. O oficial é bradesco.com.br.',
+                        initial: 'B', color: '#cc092f', time: '13:15',
+                        html: `Prezado cliente, identificamos uma pendência no seu cadastro. ${C('Atualize seus dados em até 24h', 'Prazo curto e ameaça de bloqueio forçam você a agir sem pensar.')} ou sua conta será bloqueada.<br><br><span class="lnk">${C('bradesco-cadastro.info/atualizar', 'O link leva a uma página falsa idêntica à do banco, feita para roubar seus dados e senhas.')}</span>` },
+                    isScam: true,
+                    exp: "Bancos não pedem atualização cadastral por link em e-mail. O domínio não é do banco e a ameaça de bloqueio é pressão psicológica.",
+                    tip: "Instituições legítimas não pedem senha, token ou dados completos por e-mail. Seus dados são protegidos pela LGPD: só informe no canal oficial."
+                }
+            ],
+            whatsapp: [
+                {
+                    view: { type: 'whatsapp', name: '+55 45 99871-2230', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                        clueName: 'Número desconhecido dizendo ser seu filho(a). Antes de qualquer coisa, ligue para o número antigo da pessoa.',
+                        msgs: [
+                            { time: '15:02', html: `Oi pai, derrubei meu celular no vaso e quebrou. ${C('Salva meu número novo.', 'Troca de número é a desculpa para você aceitar um contato desconhecido como se fosse da família.')}` },
+                            { time: '15:02', html: `Consegue me fazer um PIX de ${C('300 reais', 'Pedido de dinheiro logo na primeira conversa, com pressa, é o centro do golpe.')} pra eu pagar o mecânico?` }
+                        ] },
+                    isScam: true,
+                    exp: "Clássico golpe do perfil falso. A regra é: ligue para o número original da pessoa.",
+                    tip: "Combine com a família uma palavra-código para casos de pedido de dinheiro por mensagem."
+                },
+                {
+                    view: { type: 'whatsapp', name: '+55 45 3377-4100', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                        clueName: 'Número fixo com DDD da sua região (45), compatível com uma clínica local.',
+                        msgs: [{ time: '17:20',
+                            html: `Olá, aqui é da clínica odontológica. Confirmamos sua consulta para amanhã às 14h. ${C('Responda SIM para confirmar.', 'Só pede uma confirmação simples. Não pede dinheiro, senha, códigos nem dados sensíveis.')}` }] },
+                    isScam: false,
+                    exp: "Confirmação padrão de clínicas. Não pede dados sensíveis ou dinheiro.",
+                    tip: "Mesmo mensagens legítimas só devem coletar o necessário. Se tiver dúvida, ligue para a clínica."
+                },
+                {
+                    view: { type: 'whatsapp', name: 'Amigo (contato salvo)', sub: 'online', initial: 'A', color: '#3b82f6', unknown: false,
+                        clueName: 'Mesmo sendo um contato salvo, a conta pode ter sido invadida. Confirme por ligação.',
+                        msgs: [{ time: '20:14',
+                            html: `Amigo, tô precisando bater uma meta de vendas, tem como você me mandar um ${C('código de 6 dígitos', 'Esse código é a chave de acesso ao seu WhatsApp. Quem o recebe assume a sua conta.')} que vai chegar no seu SMS?` }] },
+                    isScam: true,
+                    exp: "Golpe de roubo de conta! O código de 6 dígitos é a senha de segurança do seu WhatsApp.",
+                    tip: "Nunca compartilhe códigos recebidos por SMS. Ative a confirmação em duas etapas no WhatsApp."
+                },
+                {
+                    view: { type: 'whatsapp', name: '+55 11 94002-8871', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                        clueName: 'Número desconhecido que fala em nome de uma empresa sem informar o nome dela.',
+                        msgs: [{ time: '10:36',
+                            html: `Olá! Vimos seu currículo. Vaga home office, ganhe ${C('R$ 450 por dia', 'Ganho alto por tarefa simples (curtir vídeos) é a isca clássica do golpe do falso emprego.')} curtindo vídeos. Você só precisa fazer um ${C('depósito inicial de R$ 50', 'Emprego de verdade nunca cobra para você começar a trabalhar.')} para ativar seu cadastro.` }] },
+                    isScam: true,
+                    exp: "Golpe do falso emprego: promete ganho alto por tarefas simples e cobra um \"depósito\" para liberar o cadastro.",
+                    tip: "Empresas sérias dizem de onde obtiveram seu contato e nunca cobram para contratar. Seu currículo também é dado pessoal protegido pela LGPD."
+                }
+            ],
+            fakenews: [
+                {
+                    view: { type: 'post', name: 'Notícias Urgentes Brasil', initial: '!', color: '#dc2626', time: '2 h',
+                        clueName: 'Página sem selo de verificação e sem identificação de jornalistas ou veículo.',
+                        likes: '12 mil', shares: '3,4 mil compartilhamentos',
+                        html: `<strong>ATENÇÃO:</strong> ${C('Nova lei aprovada ontem', 'Não cita número da lei nem fonte oficial (Diário Oficial, gov.br). Notícia séria cita onde confirmar.')} cancela a CNH de todos com mais de 60 anos a partir de segunda. ${C('COMPARTILHE PARA PROTESTAR!', 'Apelo para compartilhar em massa é o motor da desinformação.')}` },
+                    isScam: true,
+                    exp: "Fake News alarmista que apela para a emoção e compartilhamento em massa sem citar fontes oficiais.",
+                    tip: "Antes de compartilhar, procure a mesma notícia em sites oficiais ou veículos conhecidos."
+                },
+                {
+                    view: { type: 'news', site: 'Prefeitura Municipal de Toledo · Portal Oficial',
+                        url: 'https://www.toledo.pr.gov.br/noticias/desenvolvimento-economico-e-turismo/agencia-do-trabalhador-disponibiliza-novos-cursos',
+                        clueUrl: 'O endereço termina em ".gov.br": domínio de governo, que não pode ser registrado por qualquer pessoa.',
+                        section: 'Desenvolvimento Econômico e Turismo · Cursos e Capacitação',
+                        html: "Agência do Trabalhador de Toledo disponibiliza novos cursos gratuitos de capacitação profissional." },
+                    isScam: false,
+                    exp: "Notícia legítima: está no site oficial da prefeitura (.gov.br), informa o órgão responsável e não pede dinheiro, dados nem compartilhamento em massa.",
+                    tip: "Sites terminados em .gov.br são a fonte mais segura para informações de serviços públicos."
+                },
+                {
+                    view: { type: 'whatsapp', name: 'Tio Paulo', sub: 'visto por último hoje às 18:40', initial: 'T', color: '#a855f7', unknown: false,
+                        clueName: 'Tio Paulo é um contato real, mas ele pode ter repassado sem checar. Contato conhecido não garante informação verdadeira.',
+                        msgs: [{ time: '18:41', forwarded: 'Encaminhada com frequência',
+                            html: `${C('Link vazado do Serasa!', '"Link vazado" e "milagre" são ganchos de curiosidade típicos de golpe.')} Zere suas dívidas pagando apenas R$ 20,00 no PIX: <span class='lnk'>${C('www.serasazera-facil2026.com', 'O Serasa só usa o domínio serasa.com.br. Este endereço imita a marca para enganar.')}</span>` }] },
+                    isScam: true,
+                    exp: "Fraude! Não existe link milagroso de baixa de dívidas por PIX simbólico.",
+                    tip: "Mensagens \"encaminhadas com frequência\" merecem dupla checagem. Negocie dívidas apenas nos canais oficiais."
+                },
+                {
+                    view: { type: 'news', site: 'G1 Notícias Urgente',
+                        url: 'https://g1-noticias-urgente.com/fgts-saque-liberado',
+                        clueUrl: 'O G1 usa o endereço g1.globo.com. Este domínio imita a marca para parecer confiável.',
+                        section: 'Plantão · Economia',
+                        html: `GOVERNO LIBERA SAQUE DE R$ 3.000 DO FGTS PARA TODOS: ${C('só até hoje, cadastre-se aqui!', 'Prazo curto e cadastro em site desconhecido servem para coletar seus dados.')}` },
+                    isScam: true,
+                    exp: "Portal falso que imita um veículo conhecido. O endereço não é o oficial e a chamada exagerada tem prazo curto para pressionar o cadastro.",
+                    tip: "Informações sobre FGTS e benefícios estão no app e no site oficiais da Caixa e do governo. O cadastro em sites falsos serve para roubar seus dados."
+                }
+            ]
+        };
+
+        // ===== Cenários adicionais e níveis de dificuldade (1 = fácil, 3 = difícil) =====
+        const baseLevels = { pix: [1, 2, 2, 1], bancos: [1, 1, 2, 2], whatsapp: [1, 1, 2, 2], fakenews: [1, 2, 2, 3] };
+        Object.keys(baseLevels).forEach(k => db[k].forEach((p, i) => { p.level = baseLevels[k][i]; }));
+
+        db.pix.push({
+            level: 2,
+            view: { type: 'whatsapp', name: '+55 41 99120-6633', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                clueName: 'Número desconhecido, sem relação com você.',
+                msgs: [{ time: '14:22',
+                    html: `Boa tarde! Fiz um PIX de R$ 800,00 na sua conta por engano. ${C('Pode devolver para esta outra chave?', 'Devolução de PIX enviado por engano deve ser feita pelo app do banco (MED), nunca para outra chave passada por um desconhecido.')}` }] },
+            isScam: true,
+            exp: "Golpe do PIX por engano: o golpista pede que você devolva o valor para outra chave, e o PIX original muitas vezes nem existe.",
+            tip: "Confira o extrato no app do banco. Se o valor não está lá, é golpe. Se estiver, peça a devolução pelo próprio banco."
+        });
+
+        db.bancos.push({
+            level: 2,
+            view: { type: 'sms', sender: 'NUBANK', sub: 'Número curto', time: '19:02',
+                html: `Nubank: seu código de verificação é 482915. ${C('Não compartilhe este código com ninguém, nem com funcionários do banco.', 'O próprio SMS alerta para não compartilhar. É legítimo se VOCÊ acabou de tentar entrar no app; se não pediu, alguém pode estar tentando acessar sua conta.')}` },
+            isScam: false,
+            exp: "Código de verificação legítimo: não tem link, não pede nada e alerta para não compartilhar. Se foi você quem solicitou, está tudo certo.",
+            tip: "Se receber um código que você não pediu, troque a senha do app e não informe o código a ninguém."
+        });
+
+        db.fakenews.push({
+            level: 3,
+            view: { type: 'post', name: 'Dinheiro Fácil Brasil', initial: 'D', color: '#ca8a04', time: '5 h',
+                clueName: 'Página de finanças sem CNPJ, sem site e sem responsável identificado.',
+                likes: '8,2 mil', shares: '1,1 mil compartilhamentos',
+                html: `🎥 <strong>VÍDEO:</strong> famoso empresário ${C('aparece revelando o "método" que rende 10% ao dia', 'Nenhum investimento legítimo garante 10% ao dia. Vídeos assim podem ser deepfakes, criados por IA para imitar rosto e voz de pessoas conhecidas.')} sem sair de casa. Assista antes que seja apagado e ${C('invista R$ 100 pelo link na bio', 'Pedir dinheiro por link em perfil, com urgência, é sinal de golpe de investimento.')}.` },
+            isScam: true,
+            exp: "Golpe de investimento com vídeo falso (deepfake). Rendimento de 10% ao dia não existe e a pressa serve para você não pesquisar.",
+            tip: "Promessa de lucro alto e garantido é golpe. Confira se a pessoa realmente publicou isso no perfil oficial dela."
+        });
+        db.fakenews.push({
+            level: 2,
+            view: { type: 'post', name: 'Prefeitura de Cidade Exemplo', initial: 'P', color: '#15803d', time: '3 h',
+                clueName: 'Perfil institucional de um órgão público (cenário fictício). Perfis oficiais costumam ter selo de verificação e apontar para o site .gov.br.',
+                likes: '1,2 mil', shares: '86 compartilhamentos',
+                html: `Aviso à população: a coleta de lixo no Centro passa a ocorrer ${C('às terças, quintas e sábados', 'Informação objetiva, com dias definidos e sem exagero nem apelo emocional.')} a partir de segunda-feira. Mais detalhes em ${C('cidadeexemplo.pr.gov.br', 'Aponta para um site oficial .gov.br, onde você pode confirmar a informação.')}.` },
+            isScam: false,
+            exp: "Comunicado legítimo: informação objetiva e útil, de perfil institucional, que remete ao site oficial para confirmação e não pede dinheiro, dados nem compartilhamento em massa.",
+            tip: "Em caso de dúvida sobre avisos públicos, confirme no site oficial do órgão, digitando o endereço você mesmo."
+        });
+
+        db.outros = [
+            {
+                level: 2,
+                view: { type: 'sms', sender: 'INSS BENEFICIO', sub: 'Número comum', time: '08:40',
+                    clueSender: 'O INSS não envia SMS com ofertas de empréstimo. O remetente é um número comum.',
+                    html: `INSS: Identificamos ${C('valores esquecidos e um empréstimo consignado pré-aprovado', 'Ninguém é "sorteado" com dinheiro esquecido por SMS. O INSS não oferece empréstimo por mensagem.')} no seu nome. Consulte em ${C('meu-inss-beneficios.com', 'O site oficial é gov.br/meuinss. Este domínio é falso e imita o órgão.')} e informe seu CPF.` },
+                isScam: true,
+                exp: "Golpe do falso INSS, muito usado contra aposentados: promete dinheiro ou empréstimo para coletar CPF e dados do benefício.",
+                tip: "Consulte benefícios só pelo app Meu INSS ou pelo gov.br. CPF e dados do benefício são dados pessoais protegidos pela LGPD."
+            },
+            {
+                level: 2,
+                view: { type: 'email', subject: 'Segunda via - Fatura vencida', name: 'Cobrança Energia', address: 'cobranca@energia-segundavia.com',
+                    clueAddress: 'Concessionárias usam o domínio oficial da empresa, não endereços genéricos como "energia-segundavia.com".',
+                    initial: 'E', color: '#ea580c', time: '07:50',
+                    html: `Sua fatura está vencida. Evite o corte de energia ${C('hoje', 'Ameaça de corte imediato para pressionar você a pagar sem conferir.')}. Boleto em anexo.<br><br>Beneficiário: ${C('José A. Lima ME', 'O beneficiário do boleto não é a empresa de energia. Boleto falso costuma ter nome de outra pessoa ou empresa. Sempre confira o beneficiário antes de pagar.')}<br>Valor: R$ 389,70` },
+                isScam: true,
+                exp: "Boleto falso: o beneficiário não é a concessionária e a mensagem ameaça corte de energia para pressionar.",
+                tip: "Confira o nome do beneficiário e emita a segunda via pelo site ou app oficial da empresa."
+            },
+            {
+                level: 1,
+                view: { type: 'sms', sender: 'CORREIOS', sub: 'Número curto', time: '10:20',
+                    html: `CORREIOS: sua encomenda ${C('foi retida', 'Você nem sabe qual é a encomenda. Mensagem genérica é isca para muita gente ao mesmo tempo.')} por falta de pagamento de taxa de R$ 14,90. Regularize em ${C('correios-taxa-entrega.com', 'O site oficial é correios.com.br. Este endereço imita a marca.')} ou será devolvida.` },
+                isScam: true,
+                exp: "Golpe da taxa de entrega falsa: pede um valor pequeno para roubar os dados do seu cartão.",
+                tip: "Rastreie encomendas só pelo site e app oficiais dos Correios ou da loja onde comprou."
+            },
+            {
+                level: 1,
+                view: { type: 'sms', sender: 'CORREIOS', sub: 'Número curto', time: '15:05',
+                    html: `CORREIOS: seu objeto foi postado. ${C('Acompanhe pelo app Correios ou pelo site oficial', 'Sem link, sem pedido de pagamento e sem pedido de dados: só orienta usar os canais oficiais.')} com o código de rastreio da sua compra.` },
+                isScam: false,
+                exp: "Aviso legítimo: não traz link, não cobra taxa e não pede dados.",
+                tip: "Aviso que orienta usar o app oficial e não pede nada costuma ser seguro. Se tiver dúvida, confirme com a loja."
+            },
+            {
+                level: 2,
+                view: { type: 'whatsapp', name: '+55 44 99877-1520', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                    clueName: 'Número desconhecido, que chegou por causa do seu anúncio de venda.',
+                    msgs: [
+                        { time: '12:10', html: 'Oi, vi seu anúncio do sofá e quero comprar! Já fiz o pagamento.' },
+                        { time: '12:11', html: `Pra liberar o valor, ${C('informe os dados do seu cartão', 'Para receber um pagamento, ninguém precisa dos dados do seu cartão. Só a chave PIX basta.')} neste link: <span class="lnk">${C('pagamento-seguro-anuncios.net/receber', 'Página falsa que imita um site de pagamentos para roubar os dados do seu cartão.')}</span>` }
+                    ] },
+                isScam: true,
+                exp: "Golpe do falso comprador: a página falsa rouba os dados do cartão do vendedor.",
+                tip: "Nunca informe dados de cartão ou códigos para \"liberar\" um pagamento. Receba apenas por PIX, conferindo no app do banco."
+            },
+            {
+                level: 3,
+                view: { type: 'whatsapp', name: '+44 7700 900123', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                    clueName: 'Número internacional de alguém que você conheceu só pela internet e nunca viu pessoalmente.',
+                    msgs: [
+                        { time: '21:30', html: 'Meu amor, sinto muito a sua falta ❤️. Mandei seu presente do exterior, mas ficou preso na alfândega.' },
+                        { time: '21:31', html: `Preciso que você ${C('pague a taxa de R$ 1.800 por PIX', 'Pedir dinheiro a alguém que você conheceu pela internet, mesmo com carinho, é o centro do golpe do amor.')} para liberar. Eu devolvo assim que chegar.` }
+                    ] },
+                isScam: true,
+                exp: "Golpe do falso romance: cria um vínculo emocional e depois inventa um problema que exige dinheiro.",
+                tip: "Nunca envie dinheiro a quem você não conhece pessoalmente. Desconfie de quem foge de chamadas de vídeo."
+            },
+            {
+                level: 3,
+                view: { type: 'whatsapp', name: '+55 45 98812-9047', sub: 'toque para ver o perfil', initial: '👤', color: '#6b7c85', unknown: true,
+                    clueName: 'Número desconhecido, que não é de nenhum familiar seu.',
+                    msgs: [
+                        { time: '16:44', html: `Estamos com seu filho. ${C('Não desligue e não ligue para ninguém', 'Impedir você de confirmar com outras pessoas é a tática central do golpe.')}.` },
+                        { time: '16:44', html: `Faça um ${C('PIX de R$ 2.000 agora', 'Exigir dinheiro imediato para um suposto resgate. Golpistas usam dados e fotos de redes sociais para parecerem convincentes.')} ou ele sofrerá as consequências.` }
+                    ] },
+                isScam: true,
+                exp: "Falso sequestro: não há ninguém sequestrado. O golpista impede você de checar a história e exige pagamento rápido.",
+                tip: "Mantenha a calma, desligue e ligue direto para o familiar. Se houver dúvida ou ameaça real, ligue 190."
+            },
+            {
+                level: 1,
+                view: { type: 'whatsapp', name: 'Mãe (contato salvo)', sub: 'online', initial: 'M', color: '#ec4899', unknown: false,
+                    clueName: 'Contato salvo e conversa normal, sem pedido de dinheiro nem códigos.',
+                    msgs: [{ time: '17:12',
+                        html: `Filho, não esquece de ${C('comprar pão', 'Mensagem do dia a dia, sem pedido de dinheiro, código ou link.')} na volta. Chego às 18h. Beijo!` }] },
+                isScam: false,
+                exp: "Mensagem comum de um contato salvo, sem pedidos de dinheiro, links ou códigos.",
+                tip: "O objetivo não é desconfiar de tudo: golpes quase sempre pedem dinheiro, códigos, dados ou cliques."
+            }
+        ];
+
+        const categoryNames = {
+            pix: "1 - PIX e Promoções",
+            bancos: "2 - Mensagens de Bancos",
+            whatsapp: "3 - WhatsApp Clonado",
+            fakenews: "4 - Fake News",
+            outros: "5 - Golpes do Dia a Dia",
+            desafio: "★ Desafio Final"
+        };
+
+        const categoryTips = {
+            pix: [
+                "Ninguém cobra taxa para liberar dinheiro ou prêmio.",
+                "Desconfie de prêmios de sorteios em que você não participou.",
+                "Confira sempre o domínio do remetente e do link antes de clicar."
+            ],
+            bancos: [
+                "Banco nunca pede senha, token ou código por telefone, SMS ou e-mail.",
+                "Ligue sempre para o número do verso do cartão, não para o da mensagem.",
+                "Evite links encurtados e abra o app do banco por conta própria."
+            ],
+            whatsapp: [
+                "Pedido de dinheiro por número novo: ligue para o número antigo antes de agir.",
+                "Nunca compartilhe códigos de 6 dígitos recebidos por SMS.",
+                "Ative a confirmação em duas etapas no WhatsApp."
+            ],
+            fakenews: [
+                "Procure a notícia em fontes oficiais antes de compartilhar.",
+                "Desconfie de textos alarmistas que pedem compartilhamento em massa.",
+                "Confira o endereço do site: .gov.br e domínios oficiais são mais confiáveis."
+            ],
+            outros: [
+                "Ninguém cobra taxa para entregar encomenda ou liberar dinheiro.",
+                "Confira o beneficiário do boleto antes de pagar.",
+                "Nunca envie dinheiro a quem você não conhece pessoalmente."
+            ],
+            desafio: [
+                "Golpistas usam urgência, medo, ganância e afeto para fazer você agir sem pensar.",
+                "Confira sempre o remetente, o domínio e o link.",
+                "Na dúvida, desligue e confirme por um canal oficial."
+            ]
+        };
+
+        const CHALLENGE_SIZE = 10;
+        const ranks = [
+            { min: 0,    icon: '🔰', name: 'Estagiário' },
+            { min: 500,  icon: '🕵️', name: 'Investigador' },
+            { min: 1500, icon: '🛡️', name: 'Analista' },
+            { min: 3000, icon: '🏆', name: 'Perito Digital' }
+        ];
+        const fontSteps = [100, 112, 125, 140];
+        const STORE_KEY = 'cs-ciberseguranca-v1';
+        const state = { points: 0, best: {}, font: 0, contrast: false };
+
+        let currentCategory = '';
+        let currentPhaseIndex = 0;
+        let score = 0;
+        let roundPoints = 0;
+        let currentPhases = [];
+        let answered = false;
+        let foundClues = [];
+        let missed = [];
+        let startRank = '';
+        let timerId = null;
+        let timerStart = 0;
+
+        // ===== Persistência local (apenas neste aparelho) =====
+        function loadState() {
+            try {
+                const s = JSON.parse(localStorage.getItem(STORE_KEY) || 'null');
+                if (s && typeof s === 'object') {
+                    state.points = Number(s.points) || 0;
+                    state.best = (s.best && typeof s.best === 'object') ? s.best : {};
+                    state.font = Math.min(3, Math.max(0, Number(s.font) || 0));
+                    state.contrast = !!s.contrast;
+                }
+            } catch (e) { /* armazenamento indisponível: o jogo funciona sem salvar */ }
+        }
+        function saveState() {
+            try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {}
+        }
+
+        // ===== Acessibilidade =====
+        function applyPrefs() {
+            document.documentElement.style.fontSize = fontSteps[state.font] + '%';
+            document.body.classList.toggle('hc', state.contrast);
+            document.getElementById('btn-contrast').setAttribute('aria-pressed', String(state.contrast));
+        }
+        function changeFont(delta) {
+            state.font = Math.min(fontSteps.length - 1, Math.max(0, state.font + delta));
+            applyPrefs(); saveState();
+        }
+        function toggleContrast() { state.contrast = !state.contrast; applyPrefs(); saveState(); }
+
+        function toggleSpeech() {
+            if (!('speechSynthesis' in window)) return;
+            const s = window.speechSynthesis;
+            if (s.speaking) { s.cancel(); return; }
+            const u = new SpeechSynthesisUtterance(document.getElementById('evidence-text').innerText);
+            u.lang = 'pt-BR';
+            s.speak(u);
+        }
+        function stopSpeech() { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); }
+
+        // ===== Patentes e painel =====
+        function getRank(points) {
+            let r = ranks[0];
+            ranks.forEach(x => { if (points >= x.min) r = x; });
+            return r;
+        }
+        function rankLine() {
+            const r = getRank(state.points);
+            const next = ranks[ranks.indexOf(r) + 1];
+            return `${r.icon} ${r.name} · ${state.points} pts` +
+                (next ? ` · faltam ${next.min - state.points} pts para ${next.name}` : ' · patente máxima!');
+        }
+        function totalFor(key) { return key === 'desafio' ? CHALLENGE_SIZE : db[key].length; }
+
+        function refreshHud() {
+            document.getElementById('menu-rank').textContent = state.points > 0 ? rankLine() : '';
+            document.getElementById('cat-rank').textContent = rankLine();
+            Object.keys(db).concat('desafio').forEach(key => {
+                const el = document.getElementById('badge-' + key);
+                if (el) el.textContent = (key in state.best) ? `✔ Melhor resultado: ${state.best[key]}/${totalFor(key)}` : '';
+            });
+            const all = Object.keys(db);
+            const done = all.filter(k => k in state.best).length;
+            const btn = document.getElementById('btn-cert');
+            btn.disabled = done < all.length;
+            btn.textContent = done < all.length ? `🎓 Certificado (${done}/${all.length} categorias)` : '🎓 Gerar Certificado';
+        }
+
+        // ===== Navegação =====
+        function shuffle(arr) {
+            const a = arr.slice();
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+        // Embaralha e ordena por dificuldade (fácil → difícil)
+        function buildPhases(key) {
+            const pool = key === 'desafio' ? shuffle(Object.values(db).flat()).slice(0, CHALLENGE_SIZE) : shuffle(db[key]);
+            return pool.sort((a, b) => (a.level || 1) - (b.level || 1));
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            document.getElementById('feedback-modal').style.display = 'none';
+            closeCert();
+            if (screenId !== 'screen-game') { stopTimer(); stopSpeech(); }
+            refreshHud();
+        }
+
+        function startCategory(categoryKey) {
+            stopTimer();
+            currentCategory = categoryKey;
+            currentPhases = buildPhases(categoryKey);
+            currentPhaseIndex = 0;
+            score = 0;
+            roundPoints = 0;
+            missed = [];
+            startRank = getRank(state.points).name;
+
+            document.getElementById('game-category-title').innerText = categoryNames[categoryKey];
+            loadPhase();
+            showScreen('screen-game');
+            if (categoryKey === 'desafio') startTimer();
+        }
+
+        // ===== Cronômetro (Desafio Final) =====
+        const fmtTime = ms => {
+            const t = Math.floor(ms / 1000);
+            return String(Math.floor(t / 60)).padStart(2, '0') + ':' + String(t % 60).padStart(2, '0');
+        };
+        function updateCounter() {
+            let t = `Fase ${currentPhaseIndex + 1} de ${currentPhases.length}`;
+            if (timerId) t += ` · ⏱ ${fmtTime(Date.now() - timerStart)}`;
+            document.getElementById('game-phase-counter').innerText = t;
+        }
+        function startTimer() { timerStart = Date.now(); timerId = setInterval(updateCounter, 1000); updateCounter(); }
+        function stopTimer() { if (timerId) { clearInterval(timerId); timerId = null; } }
+
+        // ===== Fase =====
+        function renderCluePanel() {
+            const total = document.querySelectorAll('#evidence-text .clue').length;
+            const panel = document.getElementById('clue-panel');
+            if (total === 0) { panel.style.display = 'none'; return; }
+            panel.style.display = 'block';
+            const head = `<b>🔎 Pistas ${foundClues.length}/${total}</b>` +
+                (foundClues.length === 0 ? ' · Toque nos trechos destacados em amarelo para investigar.' : '');
+            panel.innerHTML = head + foundClues.map(t => `<div class="clue-item">• ${esc(t)}</div>`).join('');
+            panel.scrollTop = panel.scrollHeight;
+        }
+
+        function loadPhase() {
+            const phase = currentPhases[currentPhaseIndex];
+            const level = phase.level || 1;
+            stopSpeech();
+            answered = false;
+            foundClues = [];
+            document.getElementById('btn-scam').disabled = false;
+            document.getElementById('btn-safe').disabled = false;
+            document.getElementById('level-label').textContent = 'Dificuldade: ' + '★'.repeat(level) + '☆'.repeat(3 - level);
+            updateCounter();
+            document.getElementById('progress-bar').style.width = `${(currentPhaseIndex / currentPhases.length) * 100}%`;
+
+            const box = document.getElementById('evidence-text');
+            box.innerHTML = renderers[phase.view.type](phase.view);
+            box.scrollTop = 0;
+            renderCluePanel();
+        }
+
+        function collectClue(el) {
+            if (!el.classList.contains('found')) {
+                el.classList.add('found');
+                foundClues.push(el.dataset.clue);
+            }
+            renderCluePanel();
+        }
+
+        function checkAnswer(userGuessedScam) {
+            if (answered) return;
+            answered = true;
+            stopSpeech();
+            document.getElementById('btn-scam').disabled = true;
+            document.getElementById('btn-safe').disabled = true;
+
+            const phase = currentPhases[currentPhaseIndex];
+            const isCorrect = (userGuessedScam === phase.isScam);
+
+            const modal = document.getElementById('feedback-modal');
+            const title = document.getElementById('feedback-title');
+            const exp = document.getElementById('feedback-explanation');
+            const tip = document.getElementById('feedback-tip');
+            const next = document.getElementById('btn-next');
+
+            if (isCorrect) {
+                score++;
+                // 100 pts + 20 por pista (até 3) + 25 por nível acima do 1
+                const pts = 100 + 20 * Math.min(foundClues.length, 3) + 25 * ((phase.level || 1) - 1);
+                roundPoints += pts;
+                state.points += pts;
+                saveState();
+                title.innerHTML = `<span class="correct-text">✔ Investigação Correta! +${pts} pts</span>`;
+            } else {
+                missed.push(phase);
+                title.innerHTML = '<span class="wrong-text">✘ Falha na Investigação!</span>';
+            }
+
+            const verdict = phase.isScam ? 'Era um golpe.' : 'Era uma mensagem segura.';
+            exp.innerHTML = `<strong>${verdict}</strong> ${phase.exp}`;
+            tip.innerText = '🔒 ' + phase.tip;
+            next.innerText = (currentPhaseIndex + 1 >= currentPhases.length) ? 'Ver Resultado' : 'Continuar';
+
+            document.getElementById('progress-bar').style.width = `${((currentPhaseIndex + 1) / currentPhases.length) * 100}%`;
+            modal.style.display = 'flex';
+            next.focus();
+        }
+
+        function nextPhase() {
+            document.getElementById('feedback-modal').style.display = 'none';
+            currentPhaseIndex++;
+            if (currentPhaseIndex < currentPhases.length) loadPhase();
+            else finishCategory();
+        }
+
+        function finishCategory() {
+            const elapsed = Date.now() - timerStart;
+            const wasChallenge = currentCategory === 'desafio';
+            stopTimer();
+            const total = currentPhases.length;
+            const ratio = score / total;
+            const resultTitle = document.getElementById('result-title');
+            const icon = document.getElementById('result-icon');
+
+            if (score === total) {
+                resultTitle.innerText = "Excelente Investigador!";
+                resultTitle.style.color = "var(--safe)";
+                icon.innerText = "🏅";
+            } else if (ratio >= 0.5) {
+                resultTitle.innerText = "Investigação Mediana!";
+                resultTitle.style.color = "#facc15";
+                icon.innerText = "🕵️";
+            } else {
+                resultTitle.innerText = "Precisa de Mais Treinamento!";
+                resultTitle.style.color = "var(--danger)";
+                icon.innerText = "📚";
+            }
+
+            state.best[currentCategory] = Math.max(state.best[currentCategory] || 0, score);
+            saveState();
+
+            document.getElementById('result-category').innerText = categoryNames[currentCategory];
+            document.getElementById('result-score').innerText =
+                `Você identificou corretamente ${score} de ${total} casos (${Math.round(ratio * 100)}%).`;
+            document.getElementById('result-points').innerText =
+                `+${roundPoints} pontos nesta rodada` + (wasChallenge ? ` · Tempo: ${fmtTime(elapsed)}` : '');
+            const r = getRank(state.points);
+            document.getElementById('result-rank').innerHTML =
+                `${r.icon} <b>${r.name}</b> · ${state.points} pts no total` + (r.name !== startRank ? ' · 🎉 Nova patente!' : '');
+            document.getElementById('result-tips').innerHTML = categoryTips[currentCategory].map(t => `<li>${t}</li>`).join('');
+
+            const btn = document.getElementById('btn-review');
+            btn.style.display = missed.length ? '' : 'none';
+            btn.innerText = `Revisar Erros (${missed.length})`;
+            showScreen('screen-result');
+        }
+
+        // ===== Revisão dos erros =====
+        function openReview() {
+            document.getElementById('review-list').innerHTML = missed.map((p, i) => {
+                const evidence = renderers[p.view.type](p.view);
+                const tmp = document.createElement('div');
+                tmp.innerHTML = evidence;
+                const clues = [...tmp.querySelectorAll('.clue')].map(c => c.dataset.clue);
+                return `<div class="review-item">
+                    <h3>Caso ${i + 1}: ${p.isScam ? 'era um golpe' : 'era seguro'}</h3>
+                    ${evidence}
+                    <p>${p.exp}</p>
+                    ${clues.length ? `<ul class="review-clues">${clues.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
+                    <p class="tip">🔒 ${p.tip}</p>
+                </div>`;
+            }).join('');
+            showScreen('screen-review');
+        }
+
+        // ===== Central de Segurança =====
+        function openHelp(tab) { showScreen('screen-help'); setHelpTab(tab || 'glossario'); }
+        function setHelpTab(tab) {
+            document.querySelectorAll('.help-tab').forEach(b => {
+                const on = b.dataset.tab === tab;
+                b.classList.toggle('active', on);
+                b.setAttribute('aria-selected', String(on));
+            });
+            document.querySelectorAll('.help-pane').forEach(p => { p.style.display = (p.id === 'help-' + tab) ? 'block' : 'none'; });
+        }
+        function clearData() {
+            if (!confirm('Apagar pontos, patente, resultados e preferências salvos neste aparelho?')) return;
+            try { localStorage.removeItem(STORE_KEY); } catch (e) {}
+            state.points = 0; state.best = {}; state.font = 0; state.contrast = false;
+            applyPrefs(); refreshHud();
+        }
+
+        // ===== Certificado (gerado no navegador, nada é enviado) =====
+        function openCert() {
+            document.getElementById('cert-modal').style.display = 'flex';
+            document.getElementById('cert-name').focus();
+        }
+        function closeCert() { document.getElementById('cert-modal').style.display = 'none'; }
+
+        function wrapText(g, text, maxWidth) {
+            const lines = []; let line = '';
+            text.split(' ').forEach(w => {
+                const test = line ? line + ' ' + w : w;
+                if (g.measureText(test).width > maxWidth && line) { lines.push(line); line = w; } else { line = test; }
+            });
+            if (line) lines.push(line);
+            return lines;
+        }
+
+        function generateCertificate() {
+            const input = document.getElementById('cert-name');
+            const name = input.value.trim();
+            if (!name) { input.focus(); return; }
+
+            const W = 1754, H = 1240;
+            const c = document.createElement('canvas');
+            c.width = W; c.height = H;
+            const g = c.getContext('2d');
+            const F = '"Segoe UI", Tahoma, Arial, sans-serif';
+
+            g.fillStyle = '#060f24'; g.fillRect(0, 0, W, H);
+            g.strokeStyle = '#38bdf8'; g.lineWidth = 6; g.strokeRect(50, 50, W - 100, H - 100);
+            g.strokeStyle = 'rgba(56, 189, 248, 0.35)'; g.lineWidth = 2; g.strokeRect(75, 75, W - 150, H - 150);
+
+            g.textAlign = 'center';
+            if (logoImg.complete && logoImg.naturalWidth) g.drawImage(logoImg, W / 2 - 85, 105, 170, 170);
+            g.font = 'bold 68px ' + F; g.fillStyle = '#38bdf8'; g.fillText('CERTIFICADO DE PARTICIPAÇÃO', W / 2, 350);
+            g.font = '36px ' + F; g.fillStyle = '#9fb4d3'; g.fillText('Certificamos que', W / 2, 440);
+
+            let size = 84;
+            g.font = `bold ${size}px ${F}`;
+            while (g.measureText(name).width > W - 300 && size > 36) { size -= 4; g.font = `bold ${size}px ${F}`; }
+            g.fillStyle = '#e2e8f0'; g.fillText(name, W / 2, 550);
+            g.strokeStyle = '#38bdf8'; g.lineWidth = 2;
+            g.beginPath(); g.moveTo(W / 2 - 450, 580); g.lineTo(W / 2 + 450, 580); g.stroke();
+
+            g.font = '38px ' + F; g.fillStyle = '#e2e8f0';
+            wrapText(g, 'concluiu todas as categorias de investigação do jogo educativo CS Cyber Security, desenvolvendo habilidades para identificar golpes digitais e proteger seus dados.', W - 400)
+                .forEach((l, i) => g.fillText(l, W / 2, 670 + i * 56));
+
+            const r = getRank(state.points);
+            g.font = 'bold 46px ' + F; g.fillStyle = '#22c55e';
+            g.fillText(`Patente: ${r.name} · ${state.points} pontos`, W / 2, 900);
+
+            g.font = '28px ' + F; g.fillStyle = '#9fb4d3';
+            g.fillText('Projeto de Extensão (PROEX) · Fundação Assis Gurgacz (FAG) · Toledo – PR', W / 2, 1040);
+            g.fillText('Documento simbólico emitido pelo jogo, sem valor de certificação institucional.', W / 2, 1085);
+            g.fillText(new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' }), W / 2, 1130);
+
+            c.toBlob(blob => {
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'certificado-cs-cyber-security.png';
+                document.body.appendChild(a); a.click(); a.remove();
+                setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+            });
+            closeCert();
+        }
+
+        // ===== Eventos: pistas clicáveis e acessibilidade por teclado =====
+        const evidenceBox = document.getElementById('evidence-text');
+        evidenceBox.addEventListener('click', e => {
+            const el = e.target.closest('.clue');
+            if (el) collectClue(el);
+        });
+        evidenceBox.addEventListener('keydown', e => {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            const el = e.target.closest('.clue');
+            if (el) { e.preventDefault(); collectClue(el); }
+        });
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('keydown', e => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+            });
+        });
+        document.getElementById('cert-name').addEventListener('keydown', e => {
+            if (e.key === 'Enter') generateCertificate();
+        });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCert(); });
+
+        // ===== Logo embutida (mantém o projeto em um único arquivo) =====
+        const LOGO_SRC = 'data:image/webp;base64,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';
+        const logoImg = new Image();
+        logoImg.src = LOGO_SRC;
+        document.querySelectorAll('img[data-logo]').forEach(img => { img.src = LOGO_SRC; });
+
+        // ===== Início =====
+        loadState();
+        applyPrefs();
+        refreshHud();
+        if (!('speechSynthesis' in window)) document.getElementById('btn-speak').style.display = 'none';
+    </script>
+</body>
+</html>
